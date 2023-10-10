@@ -1,0 +1,224 @@
+/* Books.css */
+
+/* Main container styles */
+.books-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Search input styles */
+.search-input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    width: 45%;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Edit modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 50vw;
+    width: 50vw;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .books-container {
+        padding: 10px;
+    }
+
+    .search-input {
+        margin-bottom: 10px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    .pagination button {
+        margin: 0 3px;
+        padding: 4px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #999;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles for the modal and form */
+@media screen and (max-width: 600px) {
+    .modal-content {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .modal-title {
+        font-size: 1rem;
+    }
+
+    /* Adjust input width for smaller screens */
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* Adjust button padding and font size */
+    button[type="submit"],
+    button[type="button"] {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Add this to your CSS */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Optionally, adjust input widths as needed */
+.form-row .form-group input[type="text"] {
+    width: calc(100% - 10px);
+    /* 50% width with some spacing */
+}
